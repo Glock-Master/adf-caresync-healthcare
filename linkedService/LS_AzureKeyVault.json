@@ -1,0 +1,11 @@
+{
+	"name": "LS_AzureKeyVault",
+	"properties": {
+		"description": "Linked Service for adding the neon postgres db credentials as it is a recommend way ",
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://caresyncc-keyvault.vault.azure.net/"
+		}
+	}
+}
