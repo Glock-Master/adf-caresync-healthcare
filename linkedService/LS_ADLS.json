@@ -1,0 +1,11 @@
+{
+	"name": "LS_ADLS",
+	"properties": {
+		"description": "Linked Service via Azure Data Lake Storage Gen2",
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://projectcaresync.dfs.core.windows.net/"
+		}
+	}
+}
