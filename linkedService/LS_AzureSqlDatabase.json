@@ -1,0 +1,24 @@
+{
+	"name": "LS_AzureSqlDatabase",
+	"properties": {
+		"description": "Linked Service for Azure SQL Database",
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "caresync-server-azure.database.windows.net",
+			"database": "sql-db-caresync",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "nehalrandive",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "LS_AzureKeyVault",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "Azure-SQL-DB-metadata"
+			}
+		}
+	}
+}
